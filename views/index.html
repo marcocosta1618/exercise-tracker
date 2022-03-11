@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+   <script src="index.js" defer></script>
+   <title>Exercise Tracker</title>
+</head>
+
+<body>
+   <div class="content">
+      <h1>Exercise Tracker</h1>
+      <h2>New User</h2>
+      <form action="/api/users" method="post">
+         <fieldset>
+            <legend>Create a new user <em>(required field*)</em></legend>
+            <label>
+               username*:
+               <input id="uname" type="text" name="username" placeholder="Jane Doe" required />
+            </label>
+            <input type="submit" value="Submit"/>
+         </fieldset>
+      </form>
+      <h2>New Exercise</h2>
+      <form id="exercise-form" method="post">
+         <fieldset>
+            <legend>Save a new exercise <em>(required field*)</em></legend>
+            <label>
+               _id:
+               <input id="uid" type="text" name="_id" placeholder="62222e5f5155b3514nbf0cf4">
+            </label>
+            <label>
+               description:*
+               <input id="descr" type="text" name="description" placeholder="test" required>
+            </label>
+            <label>
+               duration:*
+               <input id="dur" type="text" name="duration" placeholder="45 (mins.)" required>
+            </label>
+            <label>
+               date:
+               <input id="date" type="text" name="date" placeholder="yyyy-mm-dd">
+            </label>
+            <input type="submit" value="Submit">
+         </fieldset>
+      </form>
+   </div>
+   <footer>
+      <p>Marco Costa 2022. Made with <a target="_blank" href="https://expressjs.com/" rel="noreferrer">Expressjs</a> and
+         <a target="_blank" href="https://www.mongodb.com/" rel="noreferrer">MongoDB</a>. <a target="_blank"
+            href="https://icons8.com/icon/43988/code" rel="noreferrer">Code</a> icon by <a target="_blank"
+            href="https://icons8.com" rel="noreferrer">Icons8</a>.
+      </p>
+   </footer>
+</body>
+
+</html>

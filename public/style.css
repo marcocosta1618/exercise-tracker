@@ -1,0 +1,82 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+html, body {
+   height: 100%;  /* footer on page bottom with flexbox*/
+}
+body {
+   display: flex;
+   flex-direction: column;
+   font-family: 'Open Sans', sans-serif;
+   background-color: #f3f3f3;
+}
+.content {
+   flex: 1 0 auto;
+}
+
+h1 {
+   padding: 0.5em;
+   margin: 1.8vh 2vw 2vh;
+   text-align: center;
+   font-size: calc(15px + 2vmin);
+   border-radius: 5px;
+   background-color: lightgreen;
+}
+h2 {
+   padding: 0.65em;
+   margin: 6vh 2vw 2vh;
+   font-size: calc(10px + 2vmin);
+   border-radius: 5px;
+   background-color: lightgreen;
+}
+p {
+   margin: 0 1.2rem;
+   line-height: 200%;
+}
+span {
+   font-weight: bold;
+}
+fieldset {
+   width: 80%;
+   margin: 1.8vh auto 2vh;
+   padding: 1rem;
+   font-size: 0.9rem;
+   border-radius: 5px;
+}
+legend {
+   padding: 0 0.25rem;
+}
+legend em {
+   font-size: 0.85rem;
+}
+label {
+   display: block;
+}
+input {
+   margin: 0.5rem 0;
+   padding: 0 0.5rem;
+}
+input[type='text'] {
+   width: 12rem;
+}
+input[type='submit'] {
+   display: block;
+}
+code {
+   font-family: 'Fira Mono', monospace;
+   background-color: lightsteelblue;
+}
+footer {
+   flex-shrink: 0;
+   margin: 3vh 1.8vw;
+   padding: 1rem 1rem 0.5rem;
+   text-align: center;
+   font-size: 0.85rem;
+   background-color: #d3d3d3;
+   border-radius: 5px;
+}
+footer p {
+   line-height: 150%;
+}
