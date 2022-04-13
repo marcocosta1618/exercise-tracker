@@ -7,9 +7,6 @@ Users can obtain a unique id and create, save and retrieve records of their acti
 
 ---
 
-Usage example:
-
-
 This project is hosted on [Vercel](https://exercise-tracker-three.vercel.app/).
 
 ![EXPRESS](https://img.shields.io/badge/Express.js-fff.svg?&logo=Express&logoColor=000)&nbsp;
