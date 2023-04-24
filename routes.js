@@ -3,7 +3,7 @@ const router = express.Router()
 const bodyParser = require('body-parser')
 const createError = require('http-errors')
 const userData = require('./models/userData')
-// use bobyParser for POST requests
+// use bodyParser for POST requests
 router.use('/api/users', bodyParser.urlencoded({ extended: false }))
 
 
