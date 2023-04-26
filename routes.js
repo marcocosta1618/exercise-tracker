@@ -20,7 +20,7 @@ router.route('/api/users')
          // await userData.deleteMany({username: /^fcc_test_/}) // delete users created by fCC testing
          // await userData.deleteMany({})                       // delete all users
          const allUsers = await userData.find({}).select('username') // (_id is returned by default)
-         res.send([...allUsers])
+         res.send(allUsers)
       } catch (error) {
          return next(error)
       }
